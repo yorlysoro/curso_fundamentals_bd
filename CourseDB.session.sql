@@ -11,3 +11,13 @@ ADD COLUMN `date_of_bird` DATE NULL DEFAULT NULL;
 
 ALTER TABLE people
 DROP COLUMN date_of_bird;
+
+INSERT INTO people (`last_name`, `first_name`, `address`, `city`)
+VALUES ('Vázquez', 'Israel', 'Calle Famosa Num 1', 'México');
+
+INSERT INTO people (`last_name`, `first_name`, `address`, `city`)
+VALUES('Hernández', 'Mónica', 'Reforma 222', 'México');
+
+INSERT INTO people (`last_name`, `first_name`, `address`, `city`)
+VALUES('Alanis', 'Edgar', 'Central 1', 'Monterrey');
+
