@@ -231,3 +231,40 @@ UNION select * from users
 right join posts on
 users.id = posts.user_id
 WHERE posts.user_id IS NULL;
+
+--Where
+SELECT	*
+FROM		posts
+WHERE	id	< 50;
+
+SELECT	*
+FROM		posts
+WHERE	status = 'Inactivo';
+
+SELECT	*
+FROM		posts
+WHERE	title LIKE '%escandalo%';
+
+SELECT	*
+FROM		posts
+WHERE	date_publish > '2025-01-01';
+
+SELECT	*
+FROM		posts
+WHERE	date_publish BETWEEN '2023-01-01' AND '2025-12-31';
+
+SELECT	*
+FROM		posts
+WHERE	YEAR(date_publish) BETWEEN '2023' AND '2024';
+
+SELECT	*
+FROM		posts
+WHERE	MONTH(date_publish) = '04';
+
+SELECT	*
+FROM		posts
+WHERE	user_id IS NOT NULL;
+
+SELECT	*
+FROM		posts
+WHERE	user_id IS NULL;
